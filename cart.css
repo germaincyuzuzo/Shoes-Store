@@ -1,0 +1,248 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Poppins;
+}
+
+section.header{
+    border-bottom: 1px solid lightgrey;
+    /* position: sticky;
+    z-index: 1;
+    top: 0; */
+}
+
+.navbar{
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 780px;
+}
+
+.navbar .title::before{
+    content: url('./img/icon.png');
+    position: relative;
+    top: 7px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    width: 135px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a::before{
+    content: url('img/Frame\ 1166.svg');
+    position: relative;
+    top: 4px;
+    left: -7px;
+}
+
+
+.links li::after{
+    content: url('./img/Frame\ 1163.png');
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+
+.pair1 img, .pair2 img{
+    max-width: 84%;
+    box-shadow: 5px 1px 5px 2px lightgray;
+    border-radius: 10px;
+}
+
+
+section.yourbag{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+}
+
+.yourbag h1:first-child{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+.pair1, .pair2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid lightgray;
+    padding: 30px 0px;
+    gap: 30px;
+}
+
+.heading{
+    margin-bottom: 65px;
+}
+
+.heading h2{
+    font-size: 20px;
+}
+.heading p{
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+}
+
+.pricetag1{
+    position: absolute;
+    top: 12em;
+    left: 30em;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pricetag2{
+    position: absolute;
+    top: 26.5em;
+    left: 30em;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p.quantity{
+    border: 1px solid lightgray;
+    width: 110px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0;
+}
+p.quantity::before{
+    content: url("./img/minus.png");
+    position: relative;
+    top: 5px;
+    right: 15px;
+}
+
+p.quantity::after{
+    content: url("./img/plus.png");
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+div.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+div.buttons button{
+    border: none;
+    background-color: white;
+}
+
+div.buttons button a{
+    font-weight: bold;
+    color: rgb(121, 121, 121);
+}
+
+
+.right{
+    box-shadow: 5px 1px 5px 2px lightgray;
+    border-radius: 20px;
+    max-height: 505px;
+    padding-left: 10px;
+    margin-top: 100px;
+    padding-top: 35px;
+}
+
+.right h1:first-child{
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+div.summdetails div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+
+div.summdetails div h2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+div.summdetails div p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.summdetails .discount{
+    border-bottom: 1px solid lightgray;
+}
+
+div.summdetails .discount p{
+    color: orange;
+}
+
+div.total h1{
+    padding-top: 10px;
+}
+
+.checkout{
+    width: 390px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.checkout::after{
+    content: url('./img/arrow-right.png');
+    position: relative;
+    left: 10px;
+}
+
+
+footer{
+    background-color: black;
+}
+
+
+footer main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+    max-width: 1110px;
+    margin: 0 auto;
+    column-gap: 300px;
+    align-items: center;
+}
+
+footer .contacts img{
+    max-width: 20px;
+}
+
+footer .logo .title::before{
+    content: url('./img/icon.png');
+    position: relative;
+    top: 7px;
+    right: 3px;
+}
+
+footer .contacts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
