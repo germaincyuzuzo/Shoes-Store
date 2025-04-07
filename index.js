@@ -9,8 +9,33 @@ mybody.onscroll = function(){
 };
 }
 
+const scrollBackToTop = function(){
+    let backToTop = document.getElementById("backtotop");
+    
+    window.onscroll = function(){
+        if(document.documentElement.scrollTop > 10){
+            backToTop.className = "scrollback";
+            backToTop.innerHTML = "Back to top";
+            backToTop.onmouseover = () =>{
+                backToTop.style = "cursor: pointer";
+            }
+            backToTop.onclick = () =>{
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+        }else{
+            backToTop.className = "";
+        }
+    }
+}
+
+
 window.onload = function(){
 
-    changeNav();
+    scrollBackToTop();
+
+    // changeNav();
 
 }
